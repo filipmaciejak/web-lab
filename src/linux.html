@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, linux, system operacyjny, serwer, administracja">
+    <meta name="description" content="Quiz z zagadnień związanych z używaniem oraz administracją systemem operacyjnym Linux">
+    <title>Quiz - system operacyjny Linux</title>
+    <style>
+        li {padding-top: 30px;}
+        .question {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>System operacyjny Linux</h1>
+    <p>Ta część zawiera 10 pytań z zakresu używania oraz administrowania serwerami wykorzystującymi system operacyjny Linux. Treści pytań czytaj uważnie, tak aby nie udzielić przez pomyłkę błędnej odpowiedzi.</p>
+
+    <form method="post" action="#">
+        <ol>
+            <li>
+                <p class="question">Jakie zwierzę zawiera logo systemu operacyjnego Linux?</p>
+                <input type="radio" name="l_p1" id="l_p1_a" value="a">
+                <label for="l_p1_a"><a href="https://pl.wikipedia.org/wiki/Aksolotl" target="_blank">aksolotl</a></label><br>
+                <input type="radio" name="l_p1" id="l_p1_b" value="b">
+                <label for="l_p1_b">waleń błękitny</label><br>
+                <input type="radio" name="l_p1" id="l_p1_c" value="c">
+                <label for="l_p1_c">suhak stepowy</label><br>
+                <input type="radio" name="l_p1" id="l_p1_d" value="d">
+                <label for="l_p1_d">pingwin</label><br>
+                <input type="radio" name="l_p1" id="l_p1_e" value="e">
+                <label for="l_p1_e"><a href="https://www.youtube.com/watch?v=T06iKPjh6VA" target="_blank">król Julian</a></label><br>
+                <input type="radio" name="l_p1" id="l_p1_f" value="f">
+                <label for="l_p1_f"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cryptoprocta_Ferox.JPG/800px-Cryptoprocta_Ferox.JPG" target="_blank">fossa madagaskarska</a></label><br>
+                <input type="radio" name="l_p1" id="l_p1_g" value="g">
+                <label for="l_p1_g">pampasowiec grzywiasty</label>
+            </li>
+            <li>
+                <p class="question">Która, według Ciebie, dystrybucja Linuxa jest najlepsza?</p>
+                <input type="checkbox" name="l_p2" id="l_p2_a" value="a">
+                <label for="l_p2_a">Hannah Montana Linux</label><br>
+                <input type="checkbox" name="l_p2" id="l_p2_b" value="b">
+                <label for="l_p2_b"><a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso">Debian 11</a></label><br>
+                <input type="checkbox" name="l_p2" id="l_p2_c" value="c">
+                <label for="l_p2_a">Suicide Linux</label><br>
+                <input type="checkbox" name="l_p2" id="l_p2_d" value="d" checked>
+                <label for="l_p2_d">Windows 8.1</label><br>
+                <input type="checkbox" name="l_p2" id="l_p2_e" value="e">
+                <label for="l_p2_e">Ubuntu Satanic</label><br>
+                <input type="checkbox" name="l_p2" id="l_p2_f" value="f">
+                <label for="l_p2_f">Wszystkie dystrybucje Linuxa są najlepsze, nie można wybrać jednego.</label><br>
+            </li>
+            <li>
+                <p class="question">Jaki będzie rezultat wykonania komendy <code>cowsay mooo</code>?</p>
+                <input type="radio" name="l_p3" id="l_p3_a" value="a">
+                <label for="l_p3_a">Komputer wyda dźwięk ryczenia krowy.</label><br>
+                <input type="radio" name="l_p3" id="l_p3_b" value="b">
+                <label for="l_p3_b">Od najbliższego lokalnego farmera zostanie zamówiona krowa.</label><br>
+                <input type="radio" name="l_p3" id="l_p3_c" value="c">
+                <label for="l_p3_c">W terminalu pojawi się krowa, któa wyświetli tekst podany jako argument.</label><br>
+                <input type="radio" name="l_p3" id="l_p3_d" value="d">
+                <label for="l_p3_d">W systemie Linux nie ma takiej komendy.</label><br>
+            </li>
+            <li>
+                <p class="question">Która komenda usunie folder wraz z plikami znajdującymi się w bieżącym katalogu?</p>
+                <input type="radio" name="l_p4" id="l_p4_a" value="a">
+                <label for="l_p4_a"><code>rm -rf /</code></label><br>
+                <input type="radio" name="l_p4" id="l_p4_b" value="b">
+                <label for="l_p4_b"><code>echo "Delete all files from current directory"</code></label><br>
+                <input type="radio" name="l_p4" id="l_p4_c" value="c">
+                <label for="l_p4_c"><code>rm -rf ./</code></label><br>
+                <input type="radio" name="l_p4" id="l_p4_d" value="d">
+                <label for="l_p4_d"><code>ls ./</code></label><br>
+            </li>
+            <li>
+                <p class="question">Na systemie debian użytkownik chce zainstalować bazę danych <em>mongodb</em>. W tym celu wpisał komendę:</p>
+                <code>apt-get install mongodb-org</code>
+                <p class="question">Mimo to nie udało się zainstalować bazy danych. Co użytkownik zrobił źle?</p>
+                <input type="checkbox" name="l_p5" id="l_p5_a" value="a">
+                <label for="l_p5_a">Instalowanie bazy nierelacyjnej jest niewydajne i pozbawione sensu. Tylko bazy relacyjne!</label><br>
+                <input type="checkbox" name="l_p5" id="l_p5_b" value="b">
+                <label for="l_p5_b">Zapomniał użyć komendy <code>apt-get update</code>.</label><br>
+                <input type="checkbox" name="l_p5" id="l_p5_c" value="c">
+                <label for="l_p5_c">Zapomniał podnieść uprawnień użytkownikowi.</label><br>
+                <input type="checkbox" name="l_p5" id="l_p5_d" value="d">
+                <label for="l_p5_d">Podczas instalacji palec mu zjechał i zamiast Y nacinął N.</label><br>
+            </li>
+            <li>
+                <p class="question"><em>SAMBA </em>to:</p>
+                <input type="checkbox" name="l_p6" id="l_p6_a" value="a">
+                <label for="l_p6_a">rodzaj tańca towarzyskiego</label><br>
+                <input type="checkbox" name="l_p6" id="l_p6_b" value="b">
+                <label for="l_p6_b">piosenka zespołu YouNotUs x Louis III</label><br>
+                <input type="checkbox" name="l_p6" id="l_p6_c" value="c">
+                <label for="l_p6_c">serwer webowy</label><br>
+                <input type="checkbox" name="l_p6" id="l_p6_d" value="d">
+                <label for="l_p6_d">oprogramowanie umożliwiające uruchomienie tzw. serwera plikowego na systemie Linux</label><br>
+                <input type="checkbox" name="l_p6" id="l_p6_e" value="e">
+                <label for="l_p6_e">dystrybucja Linuxa, w której cały czas leci rytmiczna muzyka</label><br>
+            </li>
+            <li>
+                <p class="question">Czym jest grupa w kontekście systemu Linux?</p>
+                <input type="radio" name="l_p7" id="l_p7_a" value="a">
+                <label for="l_p7_a">gdy zwołujesz znajomych, logujecie się razem i gracie w gry online</label><br>
+                <input type="radio" name="l_p7" id="l_p7_b" value="b">
+                <label for="l_p7_b">strukturą algebraiczną definiowaną jako zbiór z określonym na nim łącznym i odwracalnym dwuargumentowym działaniem wewnętrznym</label><br>
+                <input type="radio" name="l_p7" id="l_p7_c" value="c">
+                <label for="l_p7_c">pionową kolumną w układzie okresowym pierwiastków chemicznych</label><br>
+                <input type="radio" name="l_p7" id="l_p7_d" value="d">
+                <label for="l_p7_d">strukturą zbierającą kilku użytkowników i pozwalającą nadawać im grupowe uprawnienia</label><br>
+            </li>
+            <li>
+                <p class="question">Czym jestem?</p>
+                <p>To drzewo, które rośnie korzeniem do góry.</p>
+                <input type="radio" name="l_p8" id="l_p8_a" value="a">
+                <label for="l_p8_a">baobab</label><br>
+                <input type="radio" name="l_p8" id="l_p8_b" value="b">
+                <label for="l_p8_b">ziemniak</label><br>
+                <input type="radio" name="l_p8" id="l_p8_c" value="c">
+                <label for="l_p8_c">system plikowy Linuxa</label><br>
+                <input type="radio" name="l_p8" id="l_p8_d" value="d">
+                <label for="l_p8_d">wykopany bukszpan</label><br>
+            </li>
+            <li>
+                <p class="question">W jakim pliku trzymane są hasła użytkowników w systemie Linux? Wpisz pełną ścieżkę do tego pliku.</p>
+                <input type="text" id="l_p9" maxlength="50" size="50">
+            </li>
+            <li>
+                <p class="question">Jaki będzie rezultat wykonania komendy <code>chmod 2137 file</code>?</p>
+                <input type="radio" name="l_p10" id="l_p10_a" value="a">
+                <label for="l_p10_a">zostaną ustanowione uprawnienia dostępu do pliku, tylko papież ma do niego wgląd</label><br>
+                <input type="radio" name="l_p10" id="l_p10_b" value="b">
+                <label for="l_p10_b">zacznie  odtwarzać się "Barka"</label><br>
+                <input type="radio" name="l_p10" id="l_p10_c" value="c">
+                <label for="l_p10_c">stworzy się zamówienie na kremówki z dowozem do domu</label><br>
+                <input type="radio" name="l_p10" id="l_p10_d" value="d">
+                <label for="l_p10_d">użytkownikowi ustanowią się następujące uprawnienia dostępu: <code>---x-wsrwx</code></label><br>
+            </li>
+            
+        </ol>
+        <p style="text-align: center">
+            <input type="submit" value="Prześlij">
+            <input type="reset" value="Wyczyść">
+        </p>
+    </form>
+    <p style="text-align: center;">
+        <a href="index.html">Powrót</a>
+    </p>
+</body>
+</html>
