@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, sieci, sieci komputerowe">
+    <meta name="description" content="Quiz z sieci komputerowych">
+    <title>Quiz - sieci komputerowe</title>
+    <style>
+        li {padding-top: 30px;}
+        .question {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>Sieci komputerowe</h1>
+    <p>Ta część zawiera 10 pytań z zakresu szeroko rozumianych sieci komputerowych. Treści pytań czytaj uważnie, tak aby nie udzielić przez pomyłkę błędnej odpowiedzi.</p>
+
+    <form method="post" action="#">
+        <ol>
+            <li>
+                <p class="question">Jaki rodzaj topologii został przedstawiony na rysunku?</p>
+                <img src="https://pasja-informatyki.pl/pliki/topologia-pierscienia.jpg" alt="Topologia pierścienia" style="width: 400px; height: 150px; padding-top: 15px; "><br>
+                <input type="radio" name="s_p1" id="s_p1_a" value="a">
+                <label for="s_p1_a">topologia gwiazdy</label>
+                <input type="radio" name="s_p1" id="s_p1_b" value="b">
+                <label for="s_p1_b">topologia pierścienia</label>
+                <input type="radio" name="s_p1" id="s_p1_c" value="c">
+                <label for="s_p1_c">topologia algebraiczna</label>
+                <input type="radio" name="s_p1" id="s_p1_d" value="d">
+                <label for="s_p1_d">topologia siatki</label>
+            </li>
+            <li>
+                <p class="question">Ile adresów hostów jest dostępnych w sieci o adresie 172.16.128.0 z maską podsieci 255.255.252.0? Wpisz liczbę.</p>
+                <input type="number" id="s_p2" min="0" max="255">
+            </li>
+            <li>
+                <p class="question">Które adresy IP zostaną przepuszczone przez podaną poniżej <em>access listę</em>?</p>
+                <code>access-list 10 permit 192.168.16.0 0.0.7.255</code>
+                <br><br>
+                <input type="checkbox" name="s_p3" id="s_p3_a" value="a">
+                <label for="s_p3_a">192.168.23.0</label>
+                <input type="checkbox" name="s_p3" id="s_p3_b" value="b">
+                <label for="s_p3_b">192.168.0.0</label>
+                <input type="checkbox" name="s_p3" id="s_p3_c" value="c">
+                <label for="s_p3_c">192.168.15.0</label>
+                <input type="checkbox" name="s_p3" id="s_p3_d" value="d">
+                <label for="s_p3_d">192.168.24.0</label>
+                <input type="checkbox" name="s_p3" id="s_p3_e" value="e">
+                <label for="s_p3_e">192.168.16.0</label>
+            </li>
+            <li>
+                <p class="question">Diagnozując problem, pewien administrator stwierdził: <em>"Coś się stało z warstwą drugą".</em> O którą warstwę w modelu ISO/OSI chodzi?</p>
+                <input type="radio" name="s_p4" id="s_p4_a" value="a">
+                <label for="s_p4_a">Warstwa sieci</label>
+                <input type="radio" name="s_p4" id="s_p4_b" value="b">
+                <label for="s_p4_b">Warstwa fizyczna</label>
+                <input type="radio" name="s_p4" id="s_p4_c" value="c">
+                <label for="s_p4_c">Warstwa łącza danych</label>
+                <input type="radio" name="s_p4" id="s_p4_d" value="d">
+                <label for="s_p4_d">Stratosfera</label>
+                <input type="radio" name="s_p4" id="s_p4_e" value="e">
+                <label for="s_p4_e">Skóra właściwa</label>
+            </li>
+            <li>
+                <p class="question">Poniżej przedstawiono fragment opisu jednego z modeli sieci:</p>
+                <em>Model ten składa się z siedmiu warstw. Każda z nich reprezentuje jedną część całego procesu przesyłania danych w sieci.</em>
+                <p class="question">O jaki model chodzi?</p>
+                <input type="radio" name="s_p5" id="s_p5_a" value="a">
+                <label for="s_p5_a">Uogólniony model liniowy</label>
+                <input type="radio" name="s_p5" id="s_p5_b" value="b" checked>
+                <label for="s_p5_b">Model relacyjny</label>
+                <input type="radio" name="s_p5" id="s_p5_c" value="c">
+                <label for="s_p5_c">Model TCP/IP</label>
+                <input type="radio" name="s_p5" id="s_p5_d" value="d">
+                <label for="s_p5_d">Model ISO/OSI</label>
+            </li>
+            <li>
+                <p class="question">Przełącznik (ang. <a href="https://www.diki.pl/slownik-angielskiego?q=switch" target="_blank"> <em>switch</em></a>)</p>
+                <input type="checkbox" name="s_p6" id="s_p6_a" value="a">
+                <label for="s_p5_a">to podstawowe urządzenie działające w lokalnej sieci komputerowej (LAN).</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_b" value="b">
+                <label for="s_p6_b">jest odpowiedzialny za odnajdywanie najlepszych tras dla wysyłanych danych.</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_c" value="c">
+                <label for="s_p6_c">przekazuje otrzymywany sygnał na wszystkie swoje porty.</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_d" value="d">
+                <label for="s_p6_d">firma Cisco ma w swojej ofercie bardzo dużą liczbę takich urządzeń.</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_e" value="e">
+                <label for="s_p6_e">wie, na jaki port przekazać dane, dzięki fizycznemu adresowi karty sieciowej MAC.</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_f" value="f">
+                <label for="s_p6_f">dzięki niemu możliwe jest wyłączenie światła w pomieszczeniu.</label> <br>
+                <input type="checkbox" name="s_p6" id="s_p6_g" value="g">
+                <label for="s_p6_g">powinien mieć odpowiednią moc obliczeniową, żeby bez problemu mógł np. udostępniać usługi drukowania, przechowywania plików czy zarządzania podłączonymi do niego urządzeniami.</label>
+            </li>
+            <li>
+                <p class="question">Czym jestem?</p>
+                <p>Jestem ostatnim adresem hosta w sieci 192.168.122.0/25.</p>
+                <input type="checkbox" name="s_p7" id="s_p7_a" value="a">
+                <label for="s_p7_a">192.168.122.126</label> <br>
+                <input type="checkbox" name="s_p7" id="s_p7_b" value="b">
+                <label for="s_p7_b">CXCII.CLXVIII.CXXII.CXXVI</label> <br>
+                <input type="checkbox" name="s_p7" id="s_p7_c" value="c">
+                <label for="s_p7_c">sto dziewięćdziesiąt dwa.sto sześćdziesiąt osiem.sto dwadzieścia dwa.sto dwadzieścia sześć</label> <br>
+                <input type="checkbox" name="s_p7" id="s_p7_d" value="d">
+                <label for="s_p7_d">00110001 00111001 00110010 00101110 00110001 00110110 00111000 00101110 00110001 00110010 00110010 00101110 00110001 00110010 00110110</label> 
+            </li>
+            <li>
+                <p class="question">Co przedstawia rysunek?</p>
+                <img src="http://www.erko.pl/wp-content/uploads/2014/12/p1-e1422020532180.jpg" alt="Urządzenie sieciowe"> <br>
+                <input type="radio" name="s_p8" id="s_p8_a" value="a">
+                <label for="s_p8_a">router na patyku</label>
+                <input type="radio" name="s_p8" id="s_p8_b" value="b">
+                <label for="s_p8_b">zaciskarkę</label>
+                <input type="radio" name="s_p8" id="s_p8_c" value="c">
+                <label for="s_p8_c">kombinerki</label>
+                <input type="radio" name="s_p8" id="s_p8_d" value="d">
+                <label for="s_p8_d">światłowód</label>
+            </li>
+            <li>
+                <p class="question">Chcesz przechwycić i zanalizować ruch sieciowy na lokalnym komputerze. Wpisz nazwę programu, który Twoim zdaniem to umożliwi. Pamiętaj o poprawnej pisowni.</p>
+                <input type="text" id="s_p9" maxlength="20" value="Microsoft Access" required>
+            </li>
+            <li>
+                <p class="question">Wyobraź sobie, że właśnie przeniosłeś się w czasie do XIX wieku. Spotykasz przypadkową osobę. Chcesz jej opowiedzieć, czym jest Internet. W jaki sposób to zrobisz? Co jej powiesz?</p>
+                <textarea id="s_p10" cols="100" rows="5"></textarea>
+            </li>
+        </ol>
+        <p style="text-align: center">
+            <input type="submit" value="Prześlij">
+            <input type="reset" value="Wyczyść">
+        </p>
+    </form>
+    <p style="text-align: center;">
+        <a href="index.html">Powrót</a>
+    </p>
+    <p style="text-align: center;">2022 &copy; Wszelkie prawa zastrzeżone.</p>
+</body>
+</html>
