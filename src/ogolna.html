@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, informatyka, ogólny">
+    <meta name="description" content="Quiz z ogólnej wiedzy związanej ze szeroko pojętą informatyką">
+    <title>Quiz - ogólna wiedza informatyczna</title>
+    <style>
+        li {padding-top: 30px;}
+        .question {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>Ogólna wiedza informatyczna</h1>
+    <p>Ta część zawiera 10 pytań z zakresu szeroko pojętej informatyki, bez wyspecyfikowania konkretnej dziedziny. Treści pytań czytaj uważnie, tak aby nie udzielić przez pomyłkę błędnej odpowiedzi.</p>
+
+    <form method="post" action="#">
+        <ol>
+            <li>
+                <p class="question">Co to jest <em>ZIP</em>?</p>
+                <input type="checkbox" name="o_p1" id="o_p1_a" value="a">
+                <label for="o_p1_a">rodzaj kodeka muzycznego</label><br>
+                <input type="checkbox" name="o_p1" id="o_p1_b" value="b">
+                <label for="o_p1_b">kierunek studiów na Politechnice Wrocławskiej</label><br>
+                <input type="checkbox" name="o_p1" id="o_p1_c" value="c">
+                <label for="o_p1_c">format kompresji plików</label><br>
+                <input type="checkbox" name="o_p1" id="o_p1_d" value="d">
+                <label for="o_p1_d">zamek błyskawiczny</label><br>
+            </li>
+            <li>
+                <p class="question">Wybierz z listy podstawowy edytor graficzny systemu Windows.</p>
+                <select id="o_p2">
+                    <optgroup label="Edytory grafiki rastrowej">
+                        <option value="Adobe Photoshop">Adobe Photoshop</option>
+                        <option value="Paint">Paint</option>
+                        <option value="GIMP">GIMP</option>
+                        <option value="Pixel">Pixel</option>
+                    </optgroup>
+                    <optgroup label="Edytory grafiki wektorowej">
+                        <option value="Adobe Illustrator">Adobe Illustrator</option>
+                        <option value="CorelDRAW">CorelDRAW</option>
+                        <option value="Inkscape">Inkscape</option>
+                        <option value="AutoCAD">AutoCAD</option>
+                    </optgroup>
+                    <optgroup label="Języki programowania">
+                        <option value="Java">Java</option>
+                        <option value="C++">C++</option>
+                        <option value="Python">Python</option>
+                        <option value="HTML">HTML</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <p class="question">Do czego służy <em>hiperłącze</em>?</p>
+                <input type="radio" name="o_p3" id="o_p3_a" value="a">
+                <label for="o_p3_a">do odczytywania zawartości zaszyfrowanych plików</label><br>
+                <input type="radio" name="o_p3" id="o_p3_b" value="b">
+                <label for="o_p3_b">do otwierania stron www</label><br>
+                <input type="radio" name="o_p3" id="o_p3_c" value="c">
+                <label for="o_p3_c">do przewożenia ciężkiego sprzętu na hiperduże odległości</label><br>
+                <input type="radio" name="o_p3" id="o_p3_d" value="d">
+                <label for="o_p3_d">do przyspieszania internetu, gdy jest on zbyt niestabilny</label><br>
+            </li>
+            <li>
+                <p class="question">Na którym serwerze można odtworzyć wideo strumieniowane?</p>
+                <input type="checkbox" name="o_p4" id="o_p4_a" value="a">
+                <label for="o_p4_a">FTP</label><br>
+                <input type="checkbox" name="o_p4" id="o_p4_b" value="b">
+                <label for="o_p4_b">DHCP</label><br>
+                <input type="checkbox" name="o_p4" id="o_p4_c" value="c">
+                <label for="o_p4_c">DNS</label><br>
+                <input type="checkbox" name="o_p4" id="o_p4_d" value="d">
+                <label for="o_p4_d">BufferedReader</label><br>
+                <input type="checkbox" name="o_p4" id="o_p4_e" value="e">
+                <label for="o_p4_e">strumień magnetyczny</label><br>
+                <input type="checkbox" name="o_p4" id="o_p4_f" value="f">
+                <label for="o_p4_f">YouTube</label><br>
+            </li>
+            <li>
+                <p class="question">Najpopularniejszy format plików zawierających bazy danych to:</p>
+                <input type="radio" name="o_p5" id="o_p5_a" value="a">
+                <label for="o_p5_a">.ddl</label><br>
+                <input type="radio" name="o_p5" id="o_p5_b" value="b">
+                <label for="o_p5_b">.teacher</label><br>
+                <input type="radio" name="o_p5" id="o_p5_c" value="c">
+                <label for="o_p5_c">.accdb</label><br>
+                <input type="radio" name="o_p5" id="o_p5_d" value="d" disabled>
+                <label for="o_p5_d">.sql</label><br>
+            </li>
+            <li>
+                <p class="question">Przyjrzyj się poniższemu projektowi bazy danych.</p>
+                <p class="question">Jakie zalety i wady dostrzegasz w powyższym projekcie? W odpowiedzi zwróć uwagę na postać normalną, w której jest baza.</p>
+                <textarea id="o_p6" cols="100" rows="5"></textarea>
+            </li>
+            <li>
+                <p class="question">Gdybyś na chwilę mógł/mogła zostać jedną z postaci normalnych bazy danych, to która by to była i dlaczego? Odpowiedź uzasadnij własnościami danej postaci normalnej.</p>
+                <textarea id="o_p7" cols="70" rows="5" maxlength="200"></textarea>
+            </li>
+            <li>
+                <p class="question">Czym jestem?</p>
+                <p>Jestem zdaniem, którego zaprzeczenie znaczy to samo.</p>
+                <input type="radio" name="o_p8" id="o_p8_a" value="a">
+                <label for="o_p8_a">Rób, co chcesz.</label><br>
+                <input type="radio" name="o_p8" id="o_p8_b" value="b">
+                <label for="o_p8_b">A mówiłam?</label><br>
+                <input type="radio" name="o_p8" id="o_p8_c" value="c">
+                <label for="o_p8_c">Nie jestem zła.</label><br>
+                <input type="radio" name="o_p8" id="o_p8_d" value="d">
+                <label for="o_p8_d">Nie chce mi się z tobą gadać.</label><br>
+            </li>
+            <li>
+                <p class="question">Co oznacza, że kobieta jest <em>"90 na 60 na 90"</em>?</p>
+                <input type="checkbox" name="o_p9" id="o_p9_a" value="a">
+                <label for="o_p9_a">jest zgrabna</label><br>
+                <input type="checkbox" name="o_p9" id="o_p9_b" value="b">
+                <label for="o_p9_b">jest fioletowa</label><br>
+                <input type="checkbox" name="o_p9" id="o_p9_c" value="c">
+                <label for="o_p9_c">jest feministką</label><br>
+                <input type="checkbox" name="o_p9" id="o_p9_d" value="d">
+                <label for="o_p9_d">jest zła</label><br>
+                <input type="checkbox" name="o_p9" id="o_p9_e" value="e">
+                <label for="o_p9_e">z kobietą to nigdy nic nie wiadomo</label><br>
+            </li>
+            <li>
+                <p class="question">Przeczytaj tekst poniżej.</p>
+                <p>Przeczytaj tekst powyżej.</p>
+            </li>
+        </ol>
+        <p style="text-align: center">
+            <input type="submit" value="Prześlij">
+            <input type="reset" value="Wyczyść">
+        </p>
+    </form>
+    <p style="text-align: center;">
+        <a href="index.html">Powrót</a>
+    </p>
+</body>
+</html>
