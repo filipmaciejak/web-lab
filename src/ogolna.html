@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <h1>Ogólna wiedza informatyczna</h1>
+    <h1 id="start">Ogólna wiedza informatyczna</h1>
     <p>Ta część zawiera 10 pytań z zakresu szeroko pojętej informatyki, bez wyspecyfikowania konkretnej dziedziny. Treści pytań czytaj uważnie, tak aby nie udzielić przez pomyłkę błędnej odpowiedzi.</p>
 
     <form method="post" action="#">
@@ -91,6 +91,66 @@
             </li>
             <li>
                 <p class="question">Przyjrzyj się poniższemu projektowi bazy danych.</p>
+                <table style="border:1px solid;">
+                    <tr>
+                        <th style="border:1px solid;">NrO</th>
+                        <th style="border:1px solid;">Nazwisko</th>
+                        <th style="border:1px solid;">Imię</th>
+                        <th style="border:1px solid;">Języki</th>
+                        <th style="border:1px solid;">Znajomość</th>
+                        <th style="border:1px solid;">...</th>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid;">1</th>
+                        <th style="border:1px solid;">Abacki</th>
+                        <th style="border:1px solid;">Karol</th>
+                        <th style="border:1px solid;">
+                            <table>
+                                <tr><th style="border:1px solid;">angielski</th></tr>
+                                <tr><th style="border:1px solid;">francuski</th></tr>
+                                <tr><th style="border:1px solid;">niemiecki</th></tr>
+                            </table>
+                        </th>
+                        <th style="border:1px solid;">
+                            <table>
+                                <tr><th style="border:1px solid;">Słabo</th></tr>
+                                <tr><th style="border:1px solid;">Biegle</th></tr>
+                                <tr><th style="border:1px solid;">Biernie</th></tr>
+                            </table>
+                        </th>
+                        <th style="border:1px solid;"></th>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid;">2</th>
+                        <th style="border:1px solid;">Kabacka</th>
+                        <th style="border:1px solid;">Maria</th>
+                        <th style="border:1px solid;"></th>
+                        <th style="border:1px solid;"></th>
+                        <th style="border:1px solid;"></th>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid;">3</th>
+                        <th style="border:1px solid;">Rapacka</th>
+                        <th style="border:1px solid;">Ewa</th>
+                        <th style="border:1px solid;">
+                            <table>
+                                <tr><th style="border:1px solid;">włoski</th></tr>
+                                <tr><th style="border:1px solid;">niemiecki</th></tr>
+                                <tr><th style="border:1px solid;">angielski</th></tr>
+                                <tr><th style="border:1px solid;">rosyjski</th></tr>
+                            </table>
+                        </th>
+                        <th style="border:1px solid;">
+                            <table>
+                                <tr><th style="border:1px solid;">Dobrze</th></tr>
+                                <tr><th style="border:1px solid;">Dobrze</th></tr>
+                                <tr><th style="border:1px solid;">Dobrze</th></tr>
+                                <tr><th style="border:1px solid;">Dobrze</th></tr>
+                            </table>
+                        </th>
+                        <th style="border:1px solid;"></th>
+                    </tr>
+                </table>
                 <p class="question">Jakie zalety i wady dostrzegasz w powyższym projekcie? W odpowiedzi zwróć uwagę na postać normalną, w której jest baza.</p>
                 <textarea id="o_p6" cols="100" rows="5"></textarea>
             </li>
@@ -136,6 +196,7 @@
     <p style="text-align: center;">
         <a href="index.html">Powrót</a>
     </p>
+    <p style="text-align: center;"><a href="#start">&uarr;Wróć na początek strony&uarr;</a></p>
     <p style="text-align: center;">2022 &copy; Wszelkie prawa zastrzeżone.</p>
 </body>
 </html>
