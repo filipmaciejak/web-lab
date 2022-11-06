@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, newsletter, nagrody, dane, formularz, dane osobowe, szczegóły">
+    <meta name="description" content="Szczegółowy formularz zapisowy do newslettera">
+    <title>Zapisz się do newslettera</title>
+</head>
+<body>
+    <header>
+        <h1 id="start" style="text-align: center;">A może jeszcze...</h1>
+    </header>
+    <main>
+        <p>Aby lepiej spersonalizować dla Ciebie naszą nagrodę niespodziankę, prosimy, podaj nam jeszcze kilka informacji.</p>
+        <form method="post" action="#" style="padding-top: 10px;" oninput="result.value=parseInt(pin.value)">
+            <fieldset>
+                <legend>Dodatkowe informacje:</legend>
+                <p>
+                    <input type="text" id="pesel" name="pesel" size="15" maxlength="11" placeholder="Numer PESEL" autocomplete="on" required pattern="[0-9]{11}" autofocus>
+                </p>
+                <p>
+                    <input type="text" id="mother_maiden_name" name="mother_maiden_name" placeholder="Nazwisko panieńskie matki" size="30" maxlength="50">
+                </p>
+                <p>
+                    <input type="text" id="id_card" name="id_card" size="15" pattern="[A-Z]{3}[0-9]{6}" placeholder="Seria i nr dowodu" autocomplete="on" required>
+                </p>
+                <p>
+                    <input type="month" name="card_durability" id="card_durability" placeholder="Data ważności legitymacji studenckiej" required>
+                </p>
+                <p>
+                    0 <input type="range" name="pin" id="pin" step="1" min="0" max="999999" placeholder="Nr PIN do karty kredytowej" required> 999999
+                    Nr PIN do karty kredytowej: <output name="result" for="pin"></output>
+                </p>
+                <p>
+                    <input type="number" name="shoe_size" id="shoe_size" placeholder="Nr buta" min="0" max="100" step="1" required>
+                </p>
+                <p>
+                    <input type="color" name="fav_color" id="fav_color" placeholder="Ulubiony kolor" required>
+                </p>
+                <p>
+                    <input type="search" name="fav_word" id="fav_word" placeholder="Młodzieżowe słowo roku 2022" size="30" required>
+                </p>
+                <p>
+                    <input type="url" name="fb_link" id="fb_link" placeholder="Link do profilu na Facebooku" size="100" required>
+                </p>
+                <p style="padding-top: 10px;">
+                    <input type="submit" value="Prześlij">
+                    <input type="reset" value="Wyczyść">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p style="text-align: center;"> Autorzy: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p style="text-align: center;">2022 &copy; Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
