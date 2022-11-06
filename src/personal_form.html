@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, newsletter, nagrody, dane, formularz, dane osobowe">
+    <meta name="description" content="Formularz zapisowy do newslettera">
+    <title>Zapisz się do newslettera</title>
+</head>
+<body>
+    <h1 id="start" style="text-align: center;">Zapisz się do newslettera!</h1>
+    <p>Zachęcamy do zapisania się do naszego <mark>newslettera</mark>, aby nie ominął cię żaden nowy quiz, który pojawi się na naszej stronie.</p>
+    <p>Po zapisaniu się otrzymasz również na maila małą nagrodę niespodziankę. Zapraszamy do skorzystania z okazji :)</p>
+    <datalist id="month_list">
+        <option value="styczeń"></option>
+        <option value="luty"></option>
+        <option value="marzec"></option>
+        <option value="kwiecień"></option>
+        <option value="maj"></option>
+        <option value="czerwiec"></option>
+        <option value="lipiec"></option>
+        <option value="sierpień"></option>
+        <option value="wrzesień"></option>
+        <option value="październik"></option>
+        <option value="listopad"></option>
+        <option value="grudzień"></option>
+    </datalist>
+    <form method="post" action="#" style="padding-top: 10px;">
+        <p>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" size="25" maxlength="50" autocomplete="on" autofocus>
+        </p>
+        <p>
+            <label for="surname">Nazwisko:</label>
+            <input type="text" id="surname" name="surname" size="30" maxlength="50" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="month">Miesiąc urodzin:</label>
+            <input list="month_list" name="month" id="month">
+        </p>
+        <p>
+            <label for="email">Adres e-mail:</label>
+            <input type="email" name="mail" id="mail" size="35" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="phone">Numer telefonu:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" autocomplete="on">
+        </p>
+        <p style="padding-top: 10px;">
+            <input type="submit" value="Dalej">
+            <input type="reset" value="Wyczyść">
+        </p>
+    </form>
+</body>
+</html>
