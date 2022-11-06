@@ -12,6 +12,15 @@
     <header>
         <h1 id="start" style="text-align: center;">A może jeszcze...</h1>
     </header>
+    <datalist id="education_list">
+        <option value="podstawowe"></option>
+        <option value="gimnazjalne"></option>
+        <option value="zasadnicze zawodowe"></option>
+        <option value="zasadnicze branżowe"></option>
+        <option value="średnie branżowe"></option>
+        <option value="średnie"></option>
+        <option value="wyższe"></option>
+    </datalist>
     <main>
         <p>Aby lepiej spersonalizować dla Ciebie naszą nagrodę niespodziankę, prosimy, podaj nam jeszcze kilka informacji.</p>
         <form method="post" action="thanks.html" style="padding-top: 10px;" oninput="result.value=parseInt(pin.value)">
@@ -22,6 +31,9 @@
                 </p>
                 <p>
                     <input type="text" id="mother_maiden_name" name="mother_maiden_name" placeholder="Nazwisko panieńskie matki" size="30" maxlength="50">
+                </p>
+                <p>
+                    <input list="education_list" name="education" id="education" placeholder="Wykształcenie">
                 </p>
                 <p>
                     <input type="text" id="id_card" name="id_card" size="15" pattern="[A-Z]{3}[0-9]{6}" placeholder="Seria i nr dowodu" autocomplete="on" required>
