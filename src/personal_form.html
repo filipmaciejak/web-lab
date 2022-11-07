@@ -32,26 +32,27 @@
         <form method="post" action="detailed_form.html" style="padding-top: 10px;">
             <p>
                 <label for="name">Imię:</label>
-                <input type="text" id="name" name="name" size="25" maxlength="50" autocomplete="on" autofocus>
+                <input type="text" id="name" name="name" size="25" maxlength="50" autocomplete="on" title="Wpisz imię" autofocus>
             </p>
             <p>
                 <label for="surname">Nazwisko:</label>
-                <input type="text" id="surname" name="surname" size="30" maxlength="50" autocomplete="on" required>
+                <input type="text" id="surname" name="surname" size="30" maxlength="50" autocomplete="on" title="Wpisz nazwisko" required>
             </p>
             <p>
                 <label for="month">Miesiąc urodzin:</label>
-                <input list="month_list" name="month" id="month">
+                <input list="month_list" name="month" id="month" title="Wybierz miesiąc urodzin"> (wybierz z listy) 
             </p>
             <p>
                 <label for="email">Adres e-mail:</label>
-                <input type="email" name="mail" id="mail" size="35" autocomplete="on" required>
+                <input type="email" name="mail" id="mail" size="35" autocomplete="on" title="Wpisz adres e-mail" required>
             </p>
             <p>
                 <label for="phone">Numer telefonu:</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" autocomplete="on">
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" autocomplete="on" title="Wpisz nr telefonu"> (format: 999-999-999)
             </p>
             <p style="padding-top: 10px;">
                 <input type="submit" value="Dalej">
+                <input type="submit" formnovalidate value="Wyślij bez walidacji">
                 <input type="reset" value="Wyczyść">
             </p>
         </form>
