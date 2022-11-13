@@ -5,6 +5,13 @@
     text-align: center;
 }
 
+#end
+{
+    background-color: aqua;
+    font-size: medium;
+    color: white;
+}
+
 .end_text 
 {
     text-align: center;
