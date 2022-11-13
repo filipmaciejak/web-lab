@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, test, newsletter, nagrody, dane, formularz, dane osobowe">
+    <meta name="description" content="Formularz zapisowy do newslettera">
+    <title>Zapisz się do newslettera</title>
+    <link rel="stylesheet" href="personal_form.css">
+</head>
+<body>
+    <header>
+        <h1 id="start">Zapisz się do newslettera!</h1>
+    </header>
+    <datalist id="month_list">
+        <option value="styczeń"></option>
+        <option value="luty"></option>
+        <option value="marzec"></option>
+        <option value="kwiecień"></option>
+        <option value="maj"></option>
+        <option value="czerwiec"></option>
+        <option value="lipiec"></option>
+        <option value="sierpień"></option>
+        <option value="wrzesień"></option>
+        <option value="październik"></option>
+        <option value="listopad"></option>
+        <option value="grudzień"></option>
+    </datalist>
+    <main>
+        <p>Zachęcamy do zapisania się do naszego <mark>newslettera</mark>, aby nie ominął cię żaden nowy quiz, który pojawi się na naszej stronie.</p>
+        <p>Po zapisaniu się otrzymasz również na maila małą nagrodę niespodziankę. Zapraszamy do skorzystania z okazji :)</p>
+        <form method="post" action="#">
+            <div class="field">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" size="25" maxlength="50" autocomplete="on" title="Wpisz imię" autofocus>
+            </div>
+            <div class="field">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" size="30" maxlength="50" autocomplete="on" title="Wpisz nazwisko" required>
+            </div>
+            <div class="field">
+                <label for="month">Miesiąc urodzin:</label>
+                <input list="month_list" name="month" id="month" title="Wybierz miesiąc urodzin"> (wybierz z listy) 
+            </div>
+            <div class="field">
+                <label for="mail">Adres e-mail:</label>
+                <input type="email" name="mail" id="mail" size="35" autocomplete="on" title="Wpisz adres e-mail" required>
+            </div>
+            <div class="field">
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" autocomplete="on" title="Wpisz nr telefonu"> (format: 999-999-999)
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </div>
+        </form>
+    </main>
+    <div class="link">
+        <a href="#start">&uarr;Wróć na początek strony&uarr;</a>
+    </div>
+    <div class="link">
+        <a href="index.html">Strona główna</a>
+    </div>
+    <footer>
+        <p> Prezentację przygotowali <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p> 2022 &copy; Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
