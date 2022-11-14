@@ -12,25 +12,68 @@ h1
 
 .paragraph { color: white; }
 
-#paragraph1 { font-size: 2em; }
+#paragraph1 
+{ 
+    font-size: 2em;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-#paragraph2 { font-size: 1em; }
+#paragraph2 
+{ 
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: italic; 
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-#paragraph3 { font-size: 100%; }
+#paragraph3 
+{ 
+    font: bold 100% 'Courier New', monospace; 
+}
 
-#paragraph4 { font-size: 50%; }
+#paragraph4 
+{ 
+    font: 50% 'Courier New', monospace; 
+}
 
-#paragraph5 { font-size: 48px; }
+#paragraph5 
+{ 
+    font-size: 48px;
+    font-style: oblique;
+}
 
-#paragraph6 { font-size: 24px; }
+#paragraph6 
+{ 
+    font-size: 24px; 
+    font-style: oblique;
+}
 
-#paragraph7 { font-size: 24pt; }
+#paragraph7 
+{ 
+    font-size: 24pt; 
+    font-style: oblique;
+}
 
-#paragraph8 { font-size: 12pt; }
+#paragraph8 
+{ 
+    font-size: 12pt; 
+    font-style: oblique;
+}
 
-#paragraph9 { font-size: 3vw; }
+#paragraph9 
+{ 
+    font-size: 3vw;
+    font-variant: small-caps;
+    line-height: 20px; 
+}
 
-#paragraph10 { font-size: 3vh; }
+#paragraph10 
+{ 
+    font-size: 3vh;
+    font-variant: small-caps; 
+    line-height: 3;
+}
 
 .link { text-align: center; padding: 10px;}
 
