@@ -5,6 +5,22 @@ header
     text-align: center;
 }
 
+input:not(input[type="submit"], input[type="reset"])
+{
+    background-color: white;
+    transition: ease-in-out, background-color .9s ease-in-out;
+}
+
+input:focus:not(input[type="submit"], input[type="reset"])
+{
+    background-color: #FF9727;
+}
+
+input:required:not(input[type="submit"], input[type="reset"])
+{
+    background-color: #ff7575;
+}
+
 form
 {
     padding-top: 10px;

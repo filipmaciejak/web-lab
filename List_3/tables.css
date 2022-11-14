@@ -1,0 +1,76 @@
+body
+{
+    width: fit-content;
+    margin: auto;
+}
+
+:target
+{
+    border: 5px solid green;
+}
+
+section
+{
+    border: dashed grey;
+    width: fit-content;
+    padding: 5px;
+}
+
+.link { text-align: center; padding: 10px;}
+
+
+table.t1
+{
+    border-collapse: collapse;
+}
+
+table.t1 tr th, table.t1 tr td
+{
+    border: solid black;
+}
+
+table.t2 tr th
+{
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+table.t2 tr td:last-child
+{
+    text-align: center;
+}
+
+table.t2 tr:nth-child(2n+1)
+{
+    background-color: bisque;
+}
+
+table.t2 tr:nth-child(2n)
+{
+    background-color: white;
+}
+
+table.t2 tr:nth-last-child(2)
+{
+    color: gray;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    body{background-color: hsl(0, 0%, 100%);}}
+@media only screen and (max-width: 750px) {
+    body{background-color: hsl(0, 0%, 95%);}}
+@media only screen and (max-width: 700px) {
+    body{background-color: hsl(0, 0%, 90%);}}
+@media only screen and (max-width: 650px) {
+    body{background-color: hsl(0, 0%, 85%);}}
+@media only screen and (max-width: 600px) {
+    body{background-color: hsl(0, 0%, 80%);}}
+@media only screen and (max-width: 550px) {
+    body{background-color: hsl(0, 0%, 75%);}}
+
+footer
+{
+    text-align: center;
+}
