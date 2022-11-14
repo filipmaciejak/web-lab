@@ -1,0 +1,134 @@
+#start
+{
+    background-color: darkslategrey;
+    color: #FF9727;
+    text-align: center;
+}
+
+.end_text 
+{
+    text-align: center;
+    font-size: large; 
+    font-weight: bold;
+    color: #FF9727;
+    padding: 15px;
+}
+
+.end_text:hover
+{
+    color: red;
+}
+
+.link { text-align: center; padding: 10px;}
+
+#div1
+{
+    position: static;
+    margin-top: 10px;
+    padding-top: 10px;
+    left: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+}
+
+#div2
+{
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    padding-left: 10px;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: blue;
+}
+
+#div3
+{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    width: 150px;
+    padding-right: 5px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: black;
+}
+
+#div4
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    padding: 50px 1px 100px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+}
+
+#div5
+{
+    float: left;
+    width: 300px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: brown;
+}
+
+#div6
+{
+    float: left;
+    width: 200px;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: yellow;
+}
+
+#div7
+{
+    clear: left;
+    width: 200px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: violet;
+}
+
+#div8
+{
+    float: right;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: crimson;
+}
+
+#div9
+{
+    float: inherit;
+    width: 200px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: cyan;
+}
+
+#div10
+{
+    clear: both;
+    margin: 100px 0;
+    top: 10px;
+    border: 3px solid magenta;
+}
+
+footer
+{
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(0, 255, 60);
+    color: white;
+}
+
+footer:hover
+{
+    background-color: white;
+}
