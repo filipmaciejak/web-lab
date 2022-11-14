@@ -5,6 +5,11 @@ header
     text-align: center;
 }
 
+:required
+{
+    background-color: #ffbc75;
+}
+
 form
 {
     padding-top: 10px;

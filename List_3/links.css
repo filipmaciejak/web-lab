@@ -1,0 +1,46 @@
+body
+{
+    width: fit-content;
+    margin: auto;
+    background-image: url("res/img.jfif");
+    background-position-x: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px)
+{
+    body
+    {
+        background-size: 10%;
+        background-position-x: left;
+        background-position-y: top;
+        background-repeat: repeat;
+    }
+}
+
+#main
+{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1
+{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+footer
+{
+    text-align: center;
+}
+
+.link { text-align: center; padding: 10px;}

@@ -7,6 +7,11 @@
     text-transform: uppercase;
 }
 
+:target
+{
+    border: 5px solid green;
+}
+
 footer
 {
     text-align: center;
@@ -18,4 +23,24 @@ footer
 footer:hover
 {
     background-color: white;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link
+{
+    color: green;
+}
+
+a:visited
+{
+    color: blue;
+}
+
+a:active
+{
+    text-shadow: 1px 1px black;
 }

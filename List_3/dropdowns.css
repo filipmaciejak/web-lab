@@ -1,0 +1,57 @@
+.nested-dropdowns
+{
+    color: white;
+    background-color: blue;
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.nested-dropdowns_item a
+{
+    color: yellow;
+}
+
+.nested-dropdowns li
+{
+    border: solid cornflowerblue;
+    background-color: blue;
+    cursor: pointer;
+    padding: 0.25rem;
+    position: relative;
+}
+
+.nested-dropdowns ul
+{
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nested-dropdowns ul ul
+{
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.nested-dropdowns li:hover
+{
+    background-color: cornflowerblue;
+}
+
+.nested-dropdowns li:hover > ul
+{
+    display: block;
+}
