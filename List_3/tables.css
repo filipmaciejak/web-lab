@@ -51,6 +51,12 @@ table.t2 tr:nth-child(2n)
     background-color: white;
 }
 
+table.t2 tr:nth-last-child(2)
+{
+    color: gray;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 800px) {
     body{background-color: hsl(0, 0%, 100%);}}
 @media only screen and (max-width: 750px) {
