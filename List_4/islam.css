@@ -1,4 +1,4 @@
-html {
+body {
     background-image: url("background.jpg");
     background-repeat: repeat;
 }
@@ -126,4 +126,9 @@ span {
     line-height: normal;
     font-family: 'Handlee', cursive;
     text-align: justify;
+}
+
+footer > p
+{
+    text-align: center;
 }
