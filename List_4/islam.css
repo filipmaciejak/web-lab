@@ -33,6 +33,10 @@ h1 {
     font-size: 300%;
 }
 
+div.height-magic {
+    min-height: 70px;
+}
+
 div.special-border:hover h2 {
     font-size: 0%;
     margin-bottom: 0px;
