@@ -3,6 +3,23 @@ html {
     background-repeat: repeat;
 }
 
+@media (min-width: 600px) {
+    .overview{columns: 2}
+}
+
+@media (min-width: 900px) {
+    .overview{columns: 3}
+}
+
+.overview {
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: justify;
+    column-gap: 30px;
+}
+
 .special-border {
     border: 50px solid;
     border-image-source: url("border.png");
