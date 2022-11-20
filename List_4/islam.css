@@ -23,7 +23,7 @@ html {
 .container > * {
     flex: 1;
     min-width: 200px;
-    max-width: 800px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -38,7 +38,8 @@ h2 {
 }
 
 span {
-    line-height: 50%;
-    font-family: 'Fasthand', cursive;
+    font-size: larger;
+    line-height: normal;
+    font-family: 'Handlee', cursive;
     text-align: justify;
 }
