@@ -8,6 +8,11 @@ h1 {
     font-size: 300%;
 }
 
+nav {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
 .box {
     margin: 20px;
     padding: 30px;
