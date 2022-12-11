@@ -1,0 +1,64 @@
+body {
+    background-image: -o-radial-gradient(circle, green, white, red);
+    background-image: radial-gradient(circle, green, white, red);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 300%;
+}
+
+.box {
+    margin: 20px;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    border: 5px solid black;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: -webkit-box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    background: url(islam_sign.png);
+    background-size: 30px auto;
+    background-repeat: no-repeat;
+}
+
+.box:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+#box_1 {
+    background-repeat: repeat-x;
+    background-origin: padding-box;
+}
+
+#box_2 {
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-origin: border-box;
+}
+
+#box_3 {
+    background-position: right bottom;
+    background-origin: content-box;
+}
+
+#box_4 {
+    background-position: 50px 25px;
+}
+
+#box_5 {
+    background-position: center;
+    background-origin: content-box;
+}
+
+footer > p
+{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
