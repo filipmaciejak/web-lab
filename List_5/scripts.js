@@ -17,4 +17,4 @@ function writeHeader() {
     document.writeln("<h2>" + log + "</h2>");
 }
 
-window.onload = writeHeader();
+window.addEventListener("load", writeHeader());
