@@ -3,10 +3,21 @@ body {
     background-image: radial-gradient(circle, green, white, red);
 }
 
+nav {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Cinzel', serif;
     text-align: center;
     font-size: 300%;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 200%;
 }
 
 .box {

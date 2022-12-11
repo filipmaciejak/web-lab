@@ -124,6 +124,11 @@ body {
     text-align: center;
 }
 
+nav {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
 h1 {
     width: fit-content;
     margin-inline: auto;
@@ -132,6 +137,12 @@ h1 {
     font-size: 300%;
     -webkit-animation: anim 5s infinite linear;
             animation: anim 5s infinite linear;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 200%;
 }
 
 div.special-border:hover {

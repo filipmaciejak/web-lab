@@ -8,6 +8,12 @@ h1 {
     font-size: 300%;
 }
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
 nav {
     font-family: 'Lato', sans-serif;
     text-align: center;
