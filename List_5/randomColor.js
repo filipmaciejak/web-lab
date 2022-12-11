@@ -26,7 +26,7 @@ function getRandomColor() {
 function changeColor(color) {
     var boxes = document.getElementsByClassName("box");
 
-    for (i = 0; i < boxes.length; i++) {
+    for (var i = 0; i < boxes.length; i += 1) {
         boxes[i].style.color = color;
     }
 }
