@@ -82,8 +82,8 @@ footer > p
     text-align: center;
     width: fit-content;
     margin-inline: auto;
-    padding-inline: 10px;
     margin-bottom: 25px;
+    padding: 10px;
 }
 
 .game > form > input
