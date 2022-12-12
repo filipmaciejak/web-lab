@@ -1,9 +1,9 @@
 const targetFloat = Math.random();
 const formFloat = document.querySelector('form.float');
-const resultFloat = document.querySelector('#result_float');
-const guessesFloat = document.querySelector('#guessesFloat');
 let guessesLeftFloat = 5;
 formFloat.onsubmit = function(event) {
+    const resultFloat = document.querySelector('#result_float');
+    const guessesFloat = document.querySelector('#guessesFloat');
     event.preventDefault();
     const guess = parseFloat(formFloat.elements.guessFloat.value);
     formFloat.elements.guessFloat.value = '';
