@@ -33,6 +33,29 @@
     <div class="box" id="box_5">
         During the 19th and early 20th centuries, most of the Muslim world fell under the influence or direct control of the European Great Powers. Their efforts to win independence and build modern nation-states over the course of the last two centuries continue to reverberate to the present day, as well as fuel conflict-zones in regions such as Palestine, Kashmir, Xinjiang, Chechnya, Central Africa, Bosnia, and Myanmar. The oil boom stabilized the Arab States of the Gulf Cooperation Council, making them the world's largest oil producers and exporters, which focus on capitalism, free trade, and tourism. 
     </div>
+    
+    <div class="game">
+        <h1>Guess the Integer</h1>
+        <p>I'm thinking of a number between 1 and 100. Can you guess what it is? You have <span id="guessesInt">5</span> guesses.</p>
+        <form class="int">
+            <label for="guessInt">Your guess:</label>
+            <input type="number" id="guessInt" name="guessInt" min="1" max="100" placeholder="Enter a number">
+            <button type="submit">Guess</button>
+        </form>
+        <p id="result_int"></p>
+        <script src="guess_int.js"></script>
+    </div>
+    <div class="game">
+        <h1>Guess the Float</h1>
+        <p>I'm thinking of a number between 0 and 1. Can you guess what it is? You have <span id="guessesFloat">5</span> guesses.</p>
+        <form class="float">
+            <label for="guessFloat">Your guess:</label>
+            <input type="number" id="guessFloat" name="guessFloat" min="0" max="1" step="0.01" placeholder="Enter a number">
+            <button type="submit">Guess</button>
+        </form>
+        <p id="result_float"></p>
+        <script src="guess_float.js"></script>
+    </div>
     <footer>
         <p><a href="index.html">Back to home page</a></p>
         <p> Authors: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
