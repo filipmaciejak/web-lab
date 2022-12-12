@@ -10,7 +10,7 @@ function authorize() {
             text = "Mine too. It is the best operating system in the world!";
             break;
         case "windows":
-            text = "Are you stupid?";
+            text = "seriously?";
             break;
         default:
             text = "I've never heard about this system, but it's definitely not as good as Linux!";
