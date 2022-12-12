@@ -1,6 +1,6 @@
 function authorize() {
-    var text;
-    var system = window.prompt("What is your favourite operating system?");
+    let text;
+    let system = window.prompt("What is your favourite operating system?");
 
     switch(system.toLowerCase()) {
         case "ios": case "macos": 

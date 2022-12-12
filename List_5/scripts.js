@@ -1,6 +1,6 @@
 function writeHeader() {
-    var location = window.location.pathname;
-    var log;
+    let location = window.location.pathname;
+    let log;
 
     if (location.endsWith("index.html")) {
         log = "This site contains the most important information about Islam.";

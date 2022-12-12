@@ -16,28 +16,28 @@ function getRandomInt(maxValue) {
 }
 
 function getRandomColor() {
-    var red = getRandomInt(256);
-    var green = getRandomInt(256);
-    var blue = getRandomInt(256);
+    let red = getRandomInt(256);
+    let green = getRandomInt(256);
+    let blue = getRandomInt(256);
 
     return "rgb(" + red + ", " + green + ", " + blue + ")";
 }
 
 function changeColor(color) {
-    var boxes = document.getElementsByClassName("box");
+    let boxes = document.getElementsByClassName("box");
 
-    for (var i = 0; i < boxes.length; i += 1) {
+    for (let i = 0; i < boxes.length; i += 1) {
         boxes[i].style.color = color;
     }
 }
 
 function writeColor(color) {
-    var text = (color == "") ?  "" : "Text color: " + color;
+    let text = (color == "") ?  "" : "Text color: " + color;
     document.getElementById("color-text").innerHTML = text;
 }
 
 function changeColorButtonClicked() {
-    var randomColor = getRandomColor();
+    let randomColor = getRandomColor();
     changeColor(randomColor);
     writeColor(randomColor);
     setVisible(document.getElementById("restore-default"), true);
