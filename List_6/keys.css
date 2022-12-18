@@ -10,6 +10,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#text {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.half {
+    width: 50%;
+}
+
+.centered {
+    margin-inline: auto;
+}
+
 #content {
     width: fit-content;
     margin-inline: auto;
