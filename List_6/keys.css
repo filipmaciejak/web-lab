@@ -1,0 +1,37 @@
+:root {
+    --background-color: #2e2d4d;
+    --primary-color: #e8f1f2;
+    --secondary-color: #cb48b7;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#content {
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.key {
+    font-size: 200%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #e8f1f2;
+    border-radius: 10px;
+}
+
+.key.active {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+footer {
+    width: fit-content;
+    margin-inline: auto;
+}
