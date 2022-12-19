@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keys.css">
+    <script src="keys.js"></script>
+    <title>Know your keys!</title>
+</head>
+<body>
+    <div onmouseover="showImg()" onmouseout="hideImg()">
+        <div class="centered fit">
+            <span id="img_text">Know your Keys</span>
+        </div>
+        <div class="centered fit">
+            <img id="img" src="keys_image_1.gif">
+        </div>
+    </div>
+    <div id="content">
+        <div class="key" id="key_alt">ALT</div>
+        <div class="key" id="key_ctrl">CTRL</div>
+        <div class="key" id="key_shift">SHIFT</div>
+    </div>
+    <div class="centered half">
+        You can change the font, text color and background color, just press the specified key!
+        <h3>Font</h3>
+        <ol>
+            <li>Q - monospace</li>
+            <li>W - serif</li>
+            <li>E - sans serif</li>
+        </ol>
+        <h3>Color</h3>
+        <ol>
+            <li>R - red</li>
+            <li>T - green</li>
+            <li>Y - blue</li>
+        </ol>
+        <h3>Background</h3>
+        <ol>
+            <li>U - red</li>
+            <li>I - green</li>
+            <li>O - blue</li>
+        </ol>
+        <h4>Press P to reset</h4>
+    </div>
+    <div class="centered half" id="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus molestie felis, sit amet convallis turpis pulvinar a. Orci varius natoque penatibus et magnis dis parturient montes <span class="bold">(the mouse is at [<span id="mX">if you can see it, something's wrong</span>, <span id="mY">null</span>] on the webpage)</span>, nascetur ridiculus mus. Nam sit amet nunc ultricies, varius libero vel, elementum tortor. Nullam tincidunt nisl vitae nisi pretium faucibus. Donec ultricies vehicula risus quis eleifend. Suspendisse potenti. Curabitur quis ornare leo. Donec lorem magna, tincidunt ac porttitor sed, luctus ut nisl. Proin semper lorem ut enim bibendum, sit amet dapibus nulla vehicula. Nullam mattis nisi non nunc laoreet, a congue lorem laoreet <span class="bold">(the top left corner of the website starts at [<span id="sX">if you can see it, something's wrong</span>, <span id="sY">null</span>] on the screen)</span>.
+    </div>
+    <footer>
+        <p> Authors: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p>2022 &copy; All rights reserved.</p>
+    </footer>
+</body>
+</html>
