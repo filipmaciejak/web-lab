@@ -8,12 +8,6 @@ h1 {
     font-size: 300%;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    font-size: 200%;
-}
-
 nav {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -40,28 +34,37 @@ nav {
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-#box_1 {
-    -webkit-transition: background-color 0.3s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#box_1:hover {
-    background-color: hsla(197, 63%, 50%, 1);
-}
-
-#color-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 10pt;
+#container {
     text-align: center;
+    border: 2px solid black;
 }
 
-#color-buttons {
+ol {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    list-style-position: inside;
+    border: 2px solid black;
+}
+
+ol > li {
+    width: 80%;
+    min-height: 10px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#buttons {
     margin-top: 18px;
     text-align: center;
 }
 
-#color-buttons button {
+#buttons button {
     border: 2px solid black;
     display: inline-block;
     border-radius: 6px;
@@ -76,7 +79,7 @@ nav {
     padding: 6px 16px;
 }
 
-#color-buttons button:hover {
+#buttons button:hover {
     background-color: hsla(197, 63%, 60%, 1);
 }
 
