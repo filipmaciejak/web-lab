@@ -14,16 +14,26 @@
     <h1>To-do list</h1>
     <div id="container">
         <ol id="list">
-            <li>hej</li>
-            <li>hejhej</li>
+            <li>Feed the cat</li>
+            <li>Do the laundry</li>
+            <li>Make dinner</li>
+            <li>Sleep</li>
         </ol>
+        <textarea name="item-text" id="item-text" cols="25" rows="5"></textarea>
     </div>
-    <div id="buttons">
-        <button id="set-color">Add item</button>
+    <div class="buttons">
+        <button id="add">Add item</button>
+        <button id="add-top">Add at the top</button>
+    </div>
+    <div class="buttons">
+        <button id="remove">Remove item</button>
+        <input type="number" id="to-remove" name="to-remove" min="1" max="4">
     </div>
     <footer>
-        <p> Authors: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p id="authors"> Authors: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
         <p>2022 &copy; All rights reserved.</p>
     </footer>
+    <p id="change">Hide authors</p>
+    <script src="to-do-list.js"></script>
 </body>
 </html>
