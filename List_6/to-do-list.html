@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="list, to do, to-do, TODO">
+    <meta name="description" content="A website that helps you stay organized and plan your tasks conveniently.">
+    <link rel="stylesheet" href="to-do-list.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Handlee&family=Lato&display=swap');</style>
+    <title>To-do list</title>
+</head>
+<body>
+    <h1>To-do list</h1>
+    <div id="container">
+        <ol id="list">
+            <li>Feed the cat</li>
+            <li>Do the laundry</li>
+            <li>Make dinner</li>
+            <li>Sleep</li>
+        </ol>
+        <textarea name="item-text" id="item-text" cols="25" rows="5"></textarea>
+    </div>
+    <div class="buttons">
+        <button id="add">Add item</button>
+        <button id="add-top">Add at the top</button>
+    </div>
+    <div class="buttons">
+        <button id="remove">Remove item</button>
+        <input type="number" id="to-remove" name="to-remove" min="1" max="4">
+    </div>
+    <footer>
+        <p id="authors"> Authors: <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> i <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p>2022 &copy; All rights reserved.</p>
+    </footer>
+    <p id="change">Hide authors</p>
+    <script src="to-do-list.js"></script>
+</body>
+</html>
