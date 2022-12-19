@@ -53,7 +53,15 @@ function mousePos(e) {
     screenY.innerHTML = e.screenY - e.clientY;
 }
 
+let clickCounter = 0;
+function mouseClick() {
+    clickCounter++;
+    let tmp = 'time'+((clickCounter>1)?'s':'');
+    document.title = 'You\'ve clicked '+clickCounter+' '+tmp+' so far!'
+}
+
 window.addEventListener('keyup', keyColors);
 window.addEventListener('keydown', keyColors);
 window.addEventListener('keydown', keyStyle);
 window.addEventListener('mousemove', mousePos);
+window.addEventListener('mousedown', mouseClick);
