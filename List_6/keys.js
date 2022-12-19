@@ -60,6 +60,22 @@ function mouseClick() {
     document.title = 'You\'ve clicked '+clickCounter+' '+tmp+' so far!'
 }
 
+function showImg() {
+    let img = document.getElementById('img');
+    let text = document.getElementById('img_text');
+
+    img.style.display = 'block';
+    text.style.display = 'none';
+}
+
+function hideImg() {
+    let img = document.getElementById('img');
+    let text = document.getElementById('img_text');
+
+    img.style.display = 'none';
+    text.style.display = 'block';
+}
+
 window.addEventListener('keyup', keyColors);
 window.addEventListener('keydown', keyColors);
 window.addEventListener('keydown', keyStyle);

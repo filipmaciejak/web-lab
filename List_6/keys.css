@@ -18,6 +18,20 @@ body {
     width: 50%;
 }
 
+.fit {
+    width: fit-content;
+}
+
+#img_text {
+    font-size: 420%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: none;
+}
+
 .centered {
     margin-inline: auto;
 }
