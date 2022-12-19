@@ -29,6 +29,10 @@ body {
     flex-direction: row;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .key {
     font-size: 200%;
     padding: 10px;

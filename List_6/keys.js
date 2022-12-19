@@ -41,6 +41,15 @@ function keyStyle(e) {
     } // P
 }
 
+function mousePos(e) {
+    let fieldX = document.getElementById('mX');
+    let fieldY = document.getElementById('mY');
+
+    fieldX.innerHTML = e.clientX
+    fieldY.innerHTML = e.clientY
+}
+
 window.addEventListener('keyup', keyColors);
 window.addEventListener('keydown', keyColors);
 window.addEventListener('keydown', keyStyle);
+window.addEventListener('mousemove', mousePos);
