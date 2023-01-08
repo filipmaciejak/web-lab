@@ -30,7 +30,7 @@
     </datalist>
     <main>
         <p>Fill the form</p>
-        <form id="form" method="post" action="#">
+        <form id="form" method="post" action="personal_form.php">
             <div class="field">
                 <input type="text" id="name" name="name" placeholder="Name" size="25" maxlength="50" autocomplete="on" title="Type your name" autofocus onfocus="focusInput(this)" onblur="blurInput(this, 'Name')">
             </div>

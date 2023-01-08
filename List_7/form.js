@@ -16,14 +16,6 @@ function blurInput(element, text) {
     }
 }
 
-function submitForm() {
-    window.alert("Form submitted");
-}
-
-function resetForm() {
-    window.alert("Form resetted");
-}
-
 //document.getElementById("name").addEventListener("focus", () => {focusInput(document.getElementById("name"))});
 //document.getElementById("name").addEventListener("blur", () => {blurInput(document.getElementById("name"), "Name")});
 
@@ -38,7 +30,4 @@ function resetForm() {
 
 //document.getElementById("phone").addEventListener("focus", () => {focusInput(document.getElementById("phone"))});
 //document.getElementById("phone").addEventListener("blur", () => {blurInput(document.getElementById("phone"), "Phone number")});
-
-document.getElementById("form").addEventListener("submit", submitForm);
-document.getElementById("form").addEventListener("reset", resetForm);
 
