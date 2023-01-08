@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header
+{
+    text-align: center;
+}
+
+form
+{
+    padding-top: 10px;
+}
+
+.field
+{
+    padding: 10px 0;
+}
+
+.buttons
+{
+    padding: 10px 0;
+    text-align: center;
+}
+
+input
+{
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.buttons input
+{
+    padding: 15px 32px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: magenta;
+    border-radius: 20px;
+}
+
+footer
+{
+    text-align: center;
+    padding: 3px;
+}
