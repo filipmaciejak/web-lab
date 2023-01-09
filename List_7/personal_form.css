@@ -12,6 +12,31 @@ form
     padding-top: 10px;
 }
 
+.error
+{
+    width: 40%;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+}
+
+.confirmation
+{
+    width: 40%;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: green;
+}
+
+.address
+{
+    font-size: 12px;
+}
+
 .field
 {
     padding: 10px 0;
