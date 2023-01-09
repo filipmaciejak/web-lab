@@ -15,7 +15,7 @@ function validate_name($name)
     {
         $errors[count($errors)] = "Name cannot be larger than 50 characters!";
     }
-    if (preg_match("/[A-Za-zĄĘÓŁŻŹĆŃąęółżźćń]/", $name) == 1) 
+    if (preg_match("/[0-9]/", $name) == 1) 
     {
         $errors[count($errors)] = "Name cannot contain digits!";
     }
