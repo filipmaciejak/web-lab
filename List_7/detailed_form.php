@@ -32,7 +32,7 @@
                 <?php } ?>
             <?php } ?>
             <?php if (count($errors) == 0) { ?>
-                <div class="confirmation"><i class="icon-ok-circled"></i>Formularz wysłany poprawnie!</div>
+                <div class="confirmation"><i class="icon-ok-circled"></i>Form submitted correctly!</div>
             <?php } ?>
             <div class="address">
                 Client IP address: <?php echo (string)$ip_address; ?><br>
