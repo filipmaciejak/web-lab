@@ -1,0 +1,40 @@
+
+body {
+    background-color: rgb(155, 31, 155);
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 50%;
+    margin-inline: auto;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.login-error {
+    color: rgb(159, 0, 0);
+    margin-bottom: 10pt;
+    text-align: center;
+}
+
+form {
+    margin-inline: auto;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+
+form > * {
+    margin-bottom: 10pt;
+    margin-inline: auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h1, h2, footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}

@@ -1,0 +1,39 @@
+
+body {
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    margin-inline: auto;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.login-error {
+    color: red;
+    margin-bottom: 10pt;
+    text-align: center;
+}
+
+form {
+    margin-inline: auto;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+
+form > * {
+    margin-bottom: 10pt;
+    margin-inline: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2pt;
+}
+
+h1, h2, footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
