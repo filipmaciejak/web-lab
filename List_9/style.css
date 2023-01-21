@@ -1,0 +1,36 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.green {
+    color: forestgreen;
+    border-radius: 5px;
+    border: 2px solid forestgreen;
+    padding: 3px;
+}
+
+.red {
+    color: brown;
+    border-radius: 5px;
+    border: 2px solid brown;
+    padding: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
