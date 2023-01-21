@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
     <title>Sign up</title>
+    <?php session_start(); ?>
 </head>
 <body>
     <h1>Sign up</h1>
     <?php
-        session_start();
         if (isset($_SESSION['message']))
         {
             echo $_SESSION['message'];
@@ -22,6 +22,7 @@
         <input type="email" placeholder="e-mail" name="email">
         <input type="password" placeholder="password" name="password">
         <input type="submit" value="Submit">
+        <input type="hidden" name="origin" value="register">
     </form>
     <p>
         Already have an account? <a href="login_page.php">Sign in</a>

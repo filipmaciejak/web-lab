@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
     <title>Sign in</title>
+    <?php session_start(); ?>
 </head>
 <body>
     <?php
-        session_start();
         if (isset($_SESSION['message']))
         {
             echo $_SESSION['message'];
@@ -17,9 +17,9 @@
         }
     ?>
     <h1>Sign In</h1>
-    <form>
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
+    <form method="post" action="login.php">
+        <input type="text" placeholder="username" name="username">
+        <input type="password" placeholder="password" name="password">
         <input type="submit" value="Submit">
     </form>
     <p>
