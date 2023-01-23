@@ -12,7 +12,10 @@
     <?php
         if (isset($_SESSION['message']))
         {
-            echo $_SESSION['message'];
+            $messages = $_SESSION['message'];
+            foreach ($messages as $message) {
+                echo $message;
+            }
             unset($_SESSION['message']);
         }
     ?>

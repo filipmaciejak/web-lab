@@ -6,27 +6,31 @@
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
     <title>Change Info</title>
-    <?php session_start(); ?>
+    <?php require 'logged_in_script.php'; ?>
 </head>
 <body>
     <h1>Change Your Info</h1>
     <?php
         if (isset($_SESSION['message']))
         {
-            echo $_SESSION['message'];
+            $messages = $_SESSION['message'];
+            foreach ($messages as $message) {
+                echo $message;
+            }
             unset($_SESSION['message']);
         }
     ?>
     <form method="post" action="info.php">
-        <input type="text" placeholder="username" name="username" value=<?php echo `"`.$_SESSION['username'].`"`; ?>>
-        <input type="email" placeholder="e-mail" name="email" value=<?php echo `"`.$_SESSION['email'].`"`; ?>>
-        <input type="password" placeholder="old password" name="password">
-        <input type="password" placeholder="new password (optional)" name="newpassword">
+        <input type="text" placeholder="Name" name="name" value="<?php echo $_SESSION["name"] ?? ""; ?>" required>
+        <input type="text" placeholder="Surname" name="surname" value="<?php echo $_SESSION["surname"] ?? ""; ?>" required>
+        <input type="email" placeholder="E-mail address" name="email" value="<?php echo $_SESSION["email"] ?? ""; ?>" required>
+        <input type="tel" placeholder="Phone number" name="phone_number" value="<?php echo $_SESSION["phone_number"] ?? ""; ?>" required>
+        <input type="text" placeholder="Username" name="username" value="<?php echo $_SESSION["username"] ?? ""; ?>" required>
+        <input type="password" placeholder="Old password" name="password" required>
+        <input type="password" placeholder="New password" name="newpassword">
         <input type="submit" value="Submit">
-        <input type="hidden" name="origin" value="update">
-    </form>
-    <form action="home.php">
-        <input type="submit" value="Cancel">
+        <input type="button" onclick="location.href='home.php';" value="Cancel" />
+        <input type="hidden" name="origin" value="register">
     </form>
     <footer>
         <p style="text-align: center;"> By <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> & <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
