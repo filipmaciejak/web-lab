@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
     <title>Change Info</title>
-    <?php require 'logged_in_script.php'; ?>
+    <?php require_once 'logged_in_script.php'; require_once 'personal_data.php'?>
 </head>
 <body>
     <h1>Change Your Info</h1>
@@ -21,11 +21,11 @@
         }
     ?>
     <form method="post" action="info.php">
-        <input type="text" placeholder="Name" name="name" value="<?php echo $_SESSION["name"] ?? ""; ?>" required>
-        <input type="text" placeholder="Surname" name="surname" value="<?php echo $_SESSION["surname"] ?? ""; ?>" required>
-        <input type="email" placeholder="E-mail address" name="email" value="<?php echo $_SESSION["email"] ?? ""; ?>" required>
-        <input type="tel" placeholder="Phone number" name="phone_number" value="<?php echo $_SESSION["phone_number"] ?? ""; ?>" required>
-        <input type="text" placeholder="Username" name="username" value="<?php echo $_SESSION["username"] ?? ""; ?>" required>
+        <input type="text" placeholder="Name" name="name" value="<?php echo $personal_data[3] ?? ""; ?>" required>
+        <input type="text" placeholder="Surname" name="surname" value="<?php echo $personal_data[4] ?? ""; ?>" required>
+        <input type="email" placeholder="E-mail address" name="email" value="<?php echo $personal_data[5] ?? ""; ?>" required>
+        <input type="tel" placeholder="Phone number" name="phone_number" value="<?php echo $personal_data[6] ?? ""; ?>" required>
+        <input type="text" placeholder="Username" name="username" value="<?php echo $personal_data[1] ?? ""; ?>" required>
         <input type="password" placeholder="Old password" name="password" required>
         <input type="password" placeholder="New password" name="newpassword">
         <input type="submit" value="Submit">

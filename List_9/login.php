@@ -31,10 +31,6 @@
                     // SUCCESS
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] = $result_row[1];
-                    $_SESSION['name'] = $result_row[3];
-                    $_SESSION['surname'] = $result_row[4];
-                    $_SESSION['email'] = $result_row[5];
-                    $_SESSION['phone_number'] = $result_row[6];
                     header("Location: home.php");
                 }
                 else {
