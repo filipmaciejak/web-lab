@@ -11,7 +11,11 @@
 <body>
     <h1>Sign up</h1>
     <?php
-        if (isset($_SESSION['message']))
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+            header("Location: logout.php");
+            die();
+        }
+        elseif (isset($_SESSION['message']))
         {
             $messages = $_SESSION['message'];
             foreach ($messages as $message) {

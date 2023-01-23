@@ -61,10 +61,6 @@
             mysqli_query($conn, $sql);
 
             $_SESSION['username'] = $reg_username;
-            $_SESSION['name'] = $reg_name;
-            $_SESSION['surname'] = $reg_surname;
-            $_SESSION['email'] = $reg_email;
-            $_SESSION['phone_number'] = $reg_phone_number;
             $reg_newpassword = $_POST["newpassword"] ?? '';
 
             if ($reg_newpassword != "") {
