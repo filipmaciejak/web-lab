@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
     <title>Home Page</title>
-    <?php session_start(); ?>
+    <?php require 'logged_in_script.php'; ?>
 </head>
 <body>
+    <?php
+        if (isset($_SESSION['message']))
+        {
+            $messages = $_SESSION['message'];
+            foreach ($messages as $message) {
+                echo $message;
+            }
+            unset($_SESSION['message']);
+        }
+    ?>
     <h1>Welcome back, <?php echo $_SESSION["username"]; ?></h1>
     <form action="change_info.php">
         <input type="submit" value="Change My Info">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +13,21 @@
     <?php
         if (isset($_SESSION['message']))
         {
-            echo $_SESSION['message'];
+            $messages = $_SESSION['message'];
+            foreach ($messages as $message) {
+                echo $message;
+            }
             unset($_SESSION['message']);
         }
     ?>
     <form method="post" action="info.php">
-        <input type="text" placeholder="username" name="username">
-        <input type="email" placeholder="e-mail" name="email">
-        <input type="password" placeholder="password" name="password">
-        <input type="submit" value="Submit">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Surname" name="surname" required>
+        <input type="email" placeholder="E-mail address" name="email" required>
+        <input type="tel" placeholder="Phone number" name="phone_number" required>
+        <input type="text" placeholder="Username" name="username" required>
+        <input type="password" placeholder="password" name="password" required>
+        <input type="submit" value="Register">
         <input type="hidden" name="origin" value="register">
     </form>
     <p>
