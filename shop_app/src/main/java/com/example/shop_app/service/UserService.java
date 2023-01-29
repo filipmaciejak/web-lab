@@ -1,5 +1,6 @@
 package com.example.shop_app.service;
 
+import com.example.shop_app.entity.Role;
 import com.example.shop_app.entity.User;
 import com.example.shop_app.exception.NonUniqueLoginException;
 import com.example.shop_app.repository.UserRepository;
@@ -24,6 +25,7 @@ public class UserService {
             throw new NonUniqueLoginException("User with this login already exists!");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRole(Role.CUSTOMER);
         userRepository.save(user);
     }
 

@@ -1,9 +1,9 @@
 package com.example.shop_app.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -30,20 +30,22 @@ public class User implements UserDetails {
     private Role role;
 
     @Size(max = 255)
-    @NotNull
+    @NotBlank(message="Invalid name!")
     @Column(name = "name", nullable = false)
     private String name;
 
     @Size(max = 255)
-    @NotNull
+    @NotBlank(message="Invalid surname!")
     @Column(name = "surname", nullable = false)
     private String surname;
 
     @Size(max = 11)
-    @NotNull
+    @NotBlank(message="Type your PESEL number")
+    @Pattern(regexp="^[0-9]{11}$", message="Please provide a valid PESEL number!")
     @Column(name = "pesel", nullable = false, length = 11)
     private String pesel;
 
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
 
@@ -52,7 +54,7 @@ public class User implements UserDetails {
     private String gender;
 
     @Size(max = 255)
-    @NotNull
+    @Email(message = "Please enter a valid e-mail address!")
     @Column(name = "email", nullable = false)
     private String email;
 
@@ -61,12 +63,12 @@ public class User implements UserDetails {
     private String phoneNumber;
 
     @Size(max = 255)
-    @NotNull
+    @NotBlank(message = "Invalid login!")
     @Column(name = "login", nullable = false)
     private String login;
 
     @Size(max = 255)
-    @NotNull
+    @NotBlank(message = "Invalid password!")
     @Column(name = "password", nullable = false)
     private String password;
 
