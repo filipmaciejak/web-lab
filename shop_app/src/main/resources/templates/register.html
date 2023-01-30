@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org en">
+<html xmlns:th="http://www.thymeleaf.org en"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="text/html; UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -16,13 +17,19 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding-left: 0.8em; padding-right: 0.8em;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Online Shop&reg;</a>
+            <div class="text-md-right" style="font-size: 1.2em;" sec:authorize="isAuthenticated()">
+                <i class="bi bi-person-circle fa-lg"></i>
+                <span th:text="|${#authentication.principal.name} ${#authentication.principal.surname}|"></span>
+                <a th:href="@{/logout}">
+                    <button type="button" class="btn btn-outline-secondary" style="margin-left: .4em;">Log out</button>
+                </a>
+            </div>
         </div>
     </nav>
     <div class="container mt-5">
         <h1>Register</h1>
         <form class="row g-3 justify-content-center mx-lg-5 mx-md-0 mt-3" role="form" action="#" th:action="@{/register}" th:object="${user}"
             method="post" novalidate>
-
             <div class="col-md-6">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" th:field="*{name}" class="form-control" id="name">
@@ -68,6 +75,7 @@
                 <label for="login" class="form-label">Login</label>
                 <input type="text" class="form-control" th:field="*{login}" id="login">
                 <div th:if="${#fields.hasErrors('login')}" th:errors="*{login}" class="invalid-feedback d-block"></div>
+                <div class="invalid-feedback d-block" th:text="${error} ? 'User with this login already exists!' : '' "></div>
             </div>
             <div class="col-md-12">
                 <label for="password" class="form-label">Password</label>

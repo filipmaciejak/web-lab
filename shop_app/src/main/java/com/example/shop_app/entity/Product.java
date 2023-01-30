@@ -1,6 +1,8 @@
 package com.example.shop_app.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -24,20 +26,15 @@ public class Product {
     @JoinColumn(name = "productcategoryid", nullable = false)
     private Productcategory productcategory;
 
-    @Size(max = 255)
-    @NotNull
     @Column(name = "name", nullable = false)
     private String name;
 
     @Column(name = "weight")
     private Float weight;
 
-    @NotNull
     @Column(name = "price", nullable = false)
     private Float price;
 
-    @Size(max = 255)
-    @NotNull
     @Column(name = "code", nullable = false)
     private String code;
 

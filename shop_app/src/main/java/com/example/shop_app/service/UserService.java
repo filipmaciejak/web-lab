@@ -21,7 +21,8 @@ public class UserService {
         return userRepository.findByLogin(login);
     }
     public void registerUser(final User user) throws NonUniqueLoginException {
-        if (doesLoginExist(user.getLogin())) {
+        if (doesLoginExist(user.getLogin()))
+        {
             throw new NonUniqueLoginException("User with this login already exists!");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
