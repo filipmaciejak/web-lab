@@ -48,7 +48,7 @@ public class AuthController {
             {
                 return "redirect:/register?error=true";
             }
-            return "redirect:/login?success=true";
+            return "redirect:/login";
         }
     }
 }
