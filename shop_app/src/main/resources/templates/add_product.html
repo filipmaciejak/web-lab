@@ -16,7 +16,7 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding-left: 0.8em; padding-right: 0.8em;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Online Shop&reg;</a>
+            <a class="navbar-brand" th:href="@{/products}">Online Shop&reg;</a>
             <div class="text-md-right" style="font-size: 1.2em;" sec:authorize="isAuthenticated()">
                 <i class="bi bi-person-circle fa-lg"></i>
                 <span th:text="|${#authentication.principal.name} ${#authentication.principal.surname}|"></span>
@@ -67,7 +67,7 @@
         </form>
     </div>
     <footer class="mt-5">
-        <p style="text-align: center;"> By <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> & <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
+        <p style="text-align: center;"> By <a href="mailto:wojciechdominiak80@gmail.com">Wojciech Dominiak</a> &amp; <a href="mailto:fimaciejak@gmail.com">Filip Maciejak</a></p>
         <p style="text-align: center;">Copyright &copy; 2023 All rights reserved.</p>
     </footer>
 </body>
